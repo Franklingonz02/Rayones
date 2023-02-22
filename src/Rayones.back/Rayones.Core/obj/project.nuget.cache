@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "py4CVOcW6S8a0AxIzo+BTq/Gr9otSQ8JiXPGcEWh+/+0AzgoGS8zo9bXwPV9AiNYb2Je+5gxRgtufPm7e6qh2w==",
+  "success": true,
+  "projectFilePath": "D:\\Traking\\V3\\src\\Rayones.back\\Rayones.Core\\Rayones.Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Gonzalez\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Gonzalez\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "C:\\Users\\Gonzalez\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\Gonzalez\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
