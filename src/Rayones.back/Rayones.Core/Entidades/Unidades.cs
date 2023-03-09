@@ -6,9 +6,15 @@ using System.Collections.Generic;
 
 namespace Rayones.Core.Entidades
 {
-    public partial class Unidades : BaseEntity
+    public  class Unidades : BaseEntity
     {
+        public Unidades()
+        {
+            PedidoDetalles = new HashSet<PedidoDetalle>();
+        }
         public string Descripcion { get; set; }
+
+        public virtual ICollection<PedidoDetalle> PedidoDetalles { get; set; }
 
     }
 }

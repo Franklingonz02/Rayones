@@ -36,6 +36,7 @@ namespace Rayones.Core.Services
             {
                 unidades = unidades.Where(x => x.Descripcion.ToLower().Contains(filters.Description.ToLower()));
             }
+
             var pagedPosts = PagedList<Unidades>.Create(unidades, filters.PageNumber, filters.PageSize);
 
             return pagedPosts;

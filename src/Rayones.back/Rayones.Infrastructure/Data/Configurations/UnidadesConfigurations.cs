@@ -7,7 +7,7 @@ using System.Text;
 
 namespace Rayones.Infrastrucure.Data.Configurations
 {
-    class UnidadesConfigurations : IEntityTypeConfiguration<Unidades>
+    public class UnidadesConfigurations : IEntityTypeConfiguration<Unidades>
     {
         public void Configure(EntityTypeBuilder<Unidades> builder)
         {

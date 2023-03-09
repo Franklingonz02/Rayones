@@ -14,11 +14,15 @@ namespace Rayones.Infrastructure.Repositories
     {
         private readonly RayonesContext contex;
         private readonly IRepository<Unidades> _unidadesRepository;
+        private readonly IPedidoRepository _pedidoRepository;
+
 
         public UnitofWork(RayonesContext contex)
         {
             this.contex = contex;
         }
+
+        public IPedidoRepository pedidoRepository => _pedidoRepository ?? new PedidoRepository(contex);
 
         public IRepository<Unidades> UnidadesRepository => _unidadesRepository?? new BaseRepository<Unidades>(contex);
         public void Dispose()

@@ -14,6 +14,8 @@ namespace Rayones.Core.Interfaces
 
         IRepository<Unidades> UnidadesRepository { get; }
 
+        IPedidoRepository pedidoRepository { get; }
+
         void SaveChange();
         Task SaveChangesAsync();
 

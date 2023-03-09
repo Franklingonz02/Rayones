@@ -47,10 +47,11 @@ namespace Rayones.API
 
             services.Configure<PaginationOptions>(Configuration.GetSection("Pagination"));
 
-            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
-            services.AddTransient<IUnidadesService, UnidadesService>();
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());           
             services.AddScoped(typeof(IRepository<>), typeof(BaseRepository<>));
             services.AddTransient<IUnitofWork, UnitofWork>();
+            services.AddTransient<IUnidadesService, UnidadesService>();
+            services.AddTransient<IPedidoService, PedidoService>();
 
             services.AddDbContext<RayonesContext>(options => options.UseSqlServer(Configuration.GetConnectionString("str_connection")));
 
