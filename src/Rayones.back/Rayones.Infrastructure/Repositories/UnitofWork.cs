@@ -15,6 +15,7 @@ namespace Rayones.Infrastructure.Repositories
         private readonly RayonesContext contex;
         private readonly IRepository<Unidades> _unidadesRepository;
         private readonly IPedidoRepository _pedidoRepository;
+        private readonly IPedidoDetalleRepository _pedidoDetalleRepository;
 
 
         public UnitofWork(RayonesContext contex)
@@ -23,6 +24,8 @@ namespace Rayones.Infrastructure.Repositories
         }
 
         public IPedidoRepository pedidoRepository => _pedidoRepository ?? new PedidoRepository(contex);
+
+        public IPedidoDetalleRepository pedidoDetalleRepository => _pedidoDetalleRepository ?? new PedidoDetalleRepository(contex);
 
         public IRepository<Unidades> UnidadesRepository => _unidadesRepository?? new BaseRepository<Unidades>(contex);
         public void Dispose()

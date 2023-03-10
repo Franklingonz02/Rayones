@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Linq.Expressions;
 
 namespace Rayones.Infrastructure.Repositories
 {
@@ -51,5 +52,30 @@ namespace Rayones.Infrastructure.Repositories
             T entity = await GetById(id);
             _context.Remove(entity);
         }
+
+        //public virtual IQueryable<T> Query(Expression<Func<T, bool>> filter = null,
+        //                                  Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null,
+        //                                  string includeProperties = "")
+        //{
+        //    IQueryable<T> query = _entities;
+
+        //    if (filter != null)
+        //    {
+        //        query = query.Where(filter);
+        //    }
+
+        //    foreach (var includeProperty in includeProperties.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
+        //    {
+        //        query = query.Include(includeProperty);
+        //    }
+
+        //    if (orderBy != null)
+        //    {
+        //        query = orderBy(query);
+        //    }
+
+        //    return query;
+        //}
+
     }
 }

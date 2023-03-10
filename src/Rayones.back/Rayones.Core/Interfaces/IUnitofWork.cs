@@ -16,6 +16,8 @@ namespace Rayones.Core.Interfaces
 
         IPedidoRepository pedidoRepository { get; }
 
+        IPedidoDetalleRepository pedidoDetalleRepository { get; }
+
         void SaveChange();
         Task SaveChangesAsync();
 

@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Hosting;
+using Rayones.Core.DTOs;
 using Rayones.Core.Entidades;
 using Rayones.Core.Interfaces;
 using Rayones.Infrastrucure.Data;
@@ -19,5 +20,7 @@ namespace Rayones.Infrastructure.Repositories
         {
             return await _entities.Where(x => x.FkIdCliente.Contains(userId)).ToListAsync();
         }
+
+
     }
 }

@@ -52,6 +52,7 @@ namespace Rayones.API
             services.AddTransient<IUnitofWork, UnitofWork>();
             services.AddTransient<IUnidadesService, UnidadesService>();
             services.AddTransient<IPedidoService, PedidoService>();
+            services.AddTransient<IPedidoDetalleService, PedidoDetalleService>();
 
             services.AddDbContext<RayonesContext>(options => options.UseSqlServer(Configuration.GetConnectionString("str_connection")));
 

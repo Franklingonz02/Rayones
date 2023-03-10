@@ -8,5 +8,6 @@ namespace Rayones.Infrastructure.Interfaces
         Uri GetUnidadesPaginationUri(UnidadesQueryFilter filter, string actionUrl);
 
         Uri GetPedidoPaginationUri(PedidosQueryFilter filter, string actionUrl);
+        Uri GetPedidoDetallePaginationUri(PedidosDetalleQueryFilter filter, string actionUrl);
     }
 }

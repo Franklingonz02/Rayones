@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -14,6 +15,10 @@ namespace Rayones.Core.Interfaces
         Task Add(T entity);
         void Update(T entity);
         Task Delete(int id);
+
+        //IQueryable<T> Query(Expression<Func<T, bool>> filter = null,
+        //                                  Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null,
+        //                                  string includeProperties = "");
 
     }
 }

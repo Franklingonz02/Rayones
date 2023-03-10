@@ -29,5 +29,11 @@ namespace Rayones.Infrastructure.Services
             string baseUrl = $"{_baseUri}{actionUrl}";
             return new Uri(baseUrl);
         }
+
+        public Uri GetPedidoDetallePaginationUri(PedidosDetalleQueryFilter filter, string actionUrl)
+        {
+            string baseUrl = $"{_baseUri}{actionUrl}";
+            return new Uri(baseUrl);
+        }
     }
 }
